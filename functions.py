@@ -6,6 +6,7 @@ import time
 from datetime import datetime, timedelta
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+import os
 
 def start_selenium():
     chrome_options = Options()
@@ -104,12 +105,16 @@ def parse_rickshaw_soups(rickshaw_soups, current_date, cutoff_in_days=21):
     return rickshaw_events
 
 def spotify_connect(client_id, client_secret, playlist_name ='Live & Local'):
-    sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
+    refresh_token = os.getenv('REFRESH_TOKEN')
+    
+    auth_manager = SpotifyOAuth(
         client_id=client_id,
         client_secret=client_secret,
-        redirect_uri="https://127.0.0.1",
-        scope="playlist-modify-public playlist-modify-private user-read-private"
-    ))
+        redirect_uri="http://localhost:8080",
+        scope="playlist-modify-public playlist-modify-private",
+        refresh_token=refresh_token if refresh_token else None
+    )
+    sp = spotipy.Spotify(auth_manager=auth_manager)
     user = sp.current_user()
     playlists = sp.user_playlists(user['id'])
     playlist = None
