@@ -2,7 +2,7 @@ name: Run Spotify Scraper
 
 on:
   schedule:
-    - cron: '0 0 * * 0' 
+    - cron: '0 0 * * 0'  # Fixed spacing issue here too
   workflow_dispatch:
 
 jobs:
@@ -26,4 +26,5 @@ jobs:
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
       run: python script.py
