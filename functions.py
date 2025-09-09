@@ -110,7 +110,7 @@ def spotify_connect(client_id, client_secret, playlist_name='Live & Local'):
     auth_manager = SpotifyOAuth(
         client_id=client_id,
         client_secret=client_secret,
-        redirect_uri="http://localhost:8080",
+        redirect_uri="http://127.0.0.1:8080",
         scope="playlist-modify-public playlist-modify-private"
     )
     
