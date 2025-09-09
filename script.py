@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-client_id = os.getenv('client_id')
-client_secret = os.getenv('client_secret')
+client_id = os.getenv('CLIENT_ID')
+client_secret = os.getenv('CLIENT_SECRET')
 current_date = datetime.now().date()
 cutoff_in_days=21
 driver = start_selenium()
