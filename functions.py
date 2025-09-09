@@ -104,29 +104,39 @@ def parse_rickshaw_soups(rickshaw_soups, current_date, cutoff_in_days=21):
 
     return rickshaw_events
 
-def spotify_connect(client_id, client_secret, playlist_name ='Live & Local'):
+def spotify_connect(client_id, client_secret, playlist_name='Live & Local'):
     refresh_token = os.getenv('REFRESH_TOKEN')
     
     auth_manager = SpotifyOAuth(
         client_id=client_id,
         client_secret=client_secret,
         redirect_uri="http://localhost:8080",
-        scope="playlist-modify-public playlist-modify-private",
-        refresh_token=refresh_token if refresh_token else None
+        scope="playlist-modify-public playlist-modify-private"
     )
+    
+    # If we have a refresh token, create token info and cache it
+    if refresh_token:
+        token_info = {'refresh_token': refresh_token}
+        auth_manager.cache_handler.save_token_to_cache(token_info)
+    
     sp = spotipy.Spotify(auth_manager=auth_manager)
     user = sp.current_user()
     playlists = sp.user_playlists(user['id'])
+    
     playlist = None
-    for playlist in playlists['items']:
-        if playlist['name'] == playlist_name:
-            playlist = playlist
+    for p in playlists['items']:
+        if p['name'] == playlist_name:
+            playlist = p
             break
-        
+    
     if playlist:
-        print(f"User found:{user} \n playlist found: {playlist_name}")
+        print(f"User found: {user['display_name']} \nPlaylist found: {playlist_name}")
         playlist_id = playlist['id']
-    return sp, playlist_id
+        return sp, playlist_id
+    else:
+        raise Exception(f"Playlist '{playlist_name}' not found!")
+    
+    
 
 def clear_playlist(sp, playlist_id):
     tracks = sp.playlist_tracks(playlist_id)
