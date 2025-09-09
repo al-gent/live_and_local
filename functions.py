@@ -104,24 +104,30 @@ def parse_rickshaw_soups(rickshaw_soups, current_date, cutoff_in_days=21):
 
     return rickshaw_events
 
-def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live & Local'):    
+
+def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live & Local'):
+    print(f"Using refresh token: {refresh_token[:5]}...")
+    
     auth_manager = SpotifyOAuth(
         client_id=client_id,
         client_secret=client_secret,
-        redirect_uri="https://127.0.0.1:8080",
+        redirect_uri="http://127.0.0.1:8080",
         scope="playlist-modify-public playlist-modify-private"
     )
     
-    # If we have a refresh token, create token info and cache it
     if refresh_token:
-        token_info = {'refresh_token': refresh_token}
-        auth_manager.cache_handler.save_token_to_cache(token_info)
-    print(f"CLIENT_ID exists: {bool(client_id)}")
-    print(f"CLIENT_SECRET exists: {bool(client_secret)}")
-    print(f"REFRESH_TOKEN exists: {bool(refresh_token)}")
-    print(f"REFRESH_TOKEN length: {len(refresh_token) if refresh_token else 0}")
-
-    sp = spotipy.Spotify(auth_manager=auth_manager)
+        try:
+            token_info = auth_manager.refresh_access_token(refresh_token)
+            print(f"Got access token: {token_info['access_token'][:5]}...")
+            
+            sp = spotipy.Spotify(auth=token_info['access_token'])
+        except Exception as e:
+            print(f"Refresh token failed: {e}")
+            raise
+    else:
+        sp = spotipy.Spotify(auth_manager=auth_manager)
+    
+    user = sp.current_user()
     user = sp.current_user()
     playlists = sp.user_playlists(user['id'])
     
