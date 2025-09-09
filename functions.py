@@ -108,7 +108,7 @@ def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live
     auth_manager = SpotifyOAuth(
         client_id=client_id,
         client_secret=client_secret,
-        redirect_uri="http://127.0.0.1:8080",
+        redirect_uri="https://127.0.0.1:8080",
         scope="playlist-modify-public playlist-modify-private"
     )
     
@@ -116,7 +116,11 @@ def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live
     if refresh_token:
         token_info = {'refresh_token': refresh_token}
         auth_manager.cache_handler.save_token_to_cache(token_info)
-    
+    print(f"CLIENT_ID exists: {bool(client_id)}")
+    print(f"CLIENT_SECRET exists: {bool(client_secret)}")
+    print(f"REFRESH_TOKEN exists: {bool(refresh_token)}")
+    print(f"REFRESH_TOKEN length: {len(refresh_token) if refresh_token else 0}")
+
     sp = spotipy.Spotify(auth_manager=auth_manager)
     user = sp.current_user()
     playlists = sp.user_playlists(user['id'])
