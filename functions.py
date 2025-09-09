@@ -104,9 +104,7 @@ def parse_rickshaw_soups(rickshaw_soups, current_date, cutoff_in_days=21):
 
     return rickshaw_events
 
-def spotify_connect(client_id, client_secret, playlist_name='Live & Local'):
-    refresh_token = os.getenv('REFRESH_TOKEN')
-    
+def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live & Local'):    
     auth_manager = SpotifyOAuth(
         client_id=client_id,
         client_secret=client_secret,
