@@ -140,9 +140,19 @@ def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live
     if playlist:
         print(f"User found: {user['display_name']} \nPlaylist found: {playlist_name}")
         playlist_id = playlist['id']
-        return sp, playlist_id
     else:
-        raise Exception(f"Playlist '{playlist_name}' not found!")
+        # Create the playlist if it doesn't exist
+        print(f"Playlist '{playlist_name}' not found. Creating it...")
+        new_playlist = sp.user_playlist_create(
+            user=user['id'],
+            name=playlist_name,
+            public=True,
+            description="Upcoming live music in SF - auto-generated"
+        )
+        playlist_id = new_playlist['id']
+        print(f"Created playlist: {playlist_name}")
+        
+    return sp, playlist_id
     
     
 

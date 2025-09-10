@@ -20,8 +20,6 @@ Scrapes upcoming shows from SF venues (Chapel, Independent, Rickshaw Stop) and c
    REFRESH_TOKEN=your_refresh_token
    ```
 
-5. Create a Spotify playlist named "Live & Local"
-
 ## Usage
 
 ```bash
