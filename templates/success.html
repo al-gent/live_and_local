@@ -1,0 +1,17 @@
+<!-- templates/success.html -->
+{% extends "base.html" %}
+
+{% block title %}Success!{% endblock %}
+
+{% block content %}
+    <h1>Success! 🎉</h1>
+    <ul>
+        {% for artist in artists %}
+            <li>{{ artist }}</li>
+        {% endfor %}
+    </ul>
+    
+    <a href="/dashboard">
+        <button>Add More Venues</button>
+    </a>
+{% endblock %}
