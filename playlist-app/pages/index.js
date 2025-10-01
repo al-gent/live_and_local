@@ -70,9 +70,7 @@ const App = () => {
     const params = new URLSearchParams({
       client_id: process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID,
       response_type: 'code',
-      redirect_uri: process.env.NODE_ENV === 'production' 
-        ? 'https://adamlgent.com/api/auth/callback'
-        : 'http://127.0.0.1:3000/api/auth/callback',
+      redirect_uri: process.env.NEXT_PUBLIC_REDIRECT_URI,
       scope: 'playlist-modify-public playlist-modify-private user-read-private user-read-email',
       state: state
     });

@@ -37,9 +37,7 @@ export default async function handler(req, res) {
       body: new URLSearchParams({
         grant_type: 'authorization_code',
         code: code,
-        redirect_uri: process.env.NODE_ENV === 'production' 
-          ? 'https://adamlgent.com/api/auth/callback'
-          : 'http://127.0.0.1:3000/api/auth/callback'
+        redirect_uri: process.env.REDIRECT_URI
       })
     });
 
