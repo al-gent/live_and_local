@@ -1,0 +1,377 @@
+venue_id,raw_event_name,raw_date_text,genres,is_cancelled,parsed_date
+12,Neck of the Woods SF Open Mic Wednesdays,"Wed, Oct 15",,False,2025-10-15
+12,Fox Lake: The New World Heat Tour,"Thu, Oct 16",,False,2025-10-16
+12,What's Next,"Fri, Oct 17",,False,2025-10-17
+12,Easha,"Fri, Oct 17",,False,2025-10-17
+12,Culture Over Everythin',"Sat, Oct 18",,False,2025-10-18
+12,Sybyr/ Yvncc/ Bruhmanegod/ Melodrama/ $av,"Sat, Oct 18",,False,2025-10-18
+12,Wrath of Logarius/ Imperialist/ The Dark Alamorte/ Post Heaven/ Sicarius,"Sun, Oct 19",,False,2025-10-19
+12,Dontcryformeimalreadydead/ Bucky/ Let Them Eat Horses/ Boy Talk/ The Most Sad,"Sun, Oct 19",,False,2025-10-19
+12,Salsa Crazy Mondays,"Mon, Oct 20",,False,2025-10-20
+12,Karaoke Tuesday,"Tue, Oct 21",,False,2025-10-21
+12,Two Piece/ Chain Gang/ Cycle of Abuse/ Shortiez/ Bog Body,"Wed, Oct 22",,False,2025-10-22
+12,Neck of the Woods SF Open Mic Wednesdays,"Wed, Oct 22",,False,2025-10-22
+12,Outside World,"Thu, Oct 23",,False,2025-10-23
+12,Professa Gabel & The Top Chefs,"Sat, Oct 25",,False,2025-10-25
+12,Salsa Crazy Mondays,"Mon, Oct 27",,False,2025-10-27
+12,Popstar Booty Camp Dance Performance,"Tue, Oct 28",,False,2025-10-28
+12,Karaoke Tuesday,"Tue, Oct 28",,False,2025-10-28
+12,Neck of the Woods SF Open Mic Wednesdays,"Wed, Oct 29",,False,2025-10-29
+12,Neck of the Woods SF Open Mic Wednesdays,"Wed, Oct 15",,False,2025-10-15
+12,Fox Lake: The New World Heat Tour,"Thu, Oct 16",,False,2025-10-16
+12,What's Next,"Fri, Oct 17",,False,2025-10-17
+12,Easha,"Fri, Oct 17",,False,2025-10-17
+12,Culture Over Everythin',"Sat, Oct 18",,False,2025-10-18
+12,Sybyr/ Yvncc/ Bruhmanegod/ Melodrama/ $av,"Sat, Oct 18",,False,2025-10-18
+12,Wrath of Logarius/ Imperialist/ The Dark Alamorte/ Post Heaven/ Sicarius,"Sun, Oct 19",,False,2025-10-19
+12,Dontcryformeimalreadydead/ Bucky/ Let Them Eat Horses/ Boy Talk/ The Most Sad,"Sun, Oct 19",,False,2025-10-19
+12,Salsa Crazy Mondays,"Mon, Oct 20",,False,2025-10-20
+12,Karaoke Tuesday,"Tue, Oct 21",,False,2025-10-21
+12,Two Piece/ Chain Gang/ Cycle of Abuse/ Shortiez/ Bog Body,"Wed, Oct 22",,False,2025-10-22
+12,Neck of the Woods SF Open Mic Wednesdays,"Wed, Oct 22",,False,2025-10-22
+12,Outside World,"Thu, Oct 23",,False,2025-10-23
+12,Professa Gabel & The Top Chefs,"Sat, Oct 25",,False,2025-10-25
+12,Salsa Crazy Mondays,"Mon, Oct 27",,False,2025-10-27
+12,Popstar Booty Camp Dance Performance,"Tue, Oct 28",,False,2025-10-28
+12,Karaoke Tuesday,"Tue, Oct 28",,False,2025-10-28
+12,Neck of the Woods SF Open Mic Wednesdays,"Wed, Oct 29",,False,2025-10-29
+9,XANA,Wed Oct 1,,False,2025-10-01
+9,MADISON MCFERRIN,Fri Oct 3,,False,2025-10-03
+9,Yīn Yīn,Sat Oct 4,,False,2025-10-04
+9,UPCHUCK,Mon Oct 6,,False,2025-10-06
+9,JASMINE.4.T,Wed Oct 8,,False,2025-10-08
+9,La Doña,Thu Oct 9,,False,2025-10-09
+9,Junior Varsity,Fri Oct 10,,False,2025-10-10
+9,THE TUBS,Sat Oct 11,,False,2025-10-11
+9,Pool Kids,Tue Oct 14,,False,2025-10-14
+9,WOMBO,Wed Oct 15,,False,2025-10-15
+9,CHILD,Sat Oct 25,,False,2025-10-25
+9,THE PARTY OF A SHOWGIRL: A TS12 Celebration,Thu Oct 23,,False,2025-10-23
+9,Jess Cornelius,Sun Oct 26,,False,2025-10-26
+9,FIGURE EIGHT,Wed Nov 19,,False,2025-11-19
+9,MARLON FUNAKI,Sat Dec 13,,False,2025-12-13
+9,ALLAN RAYMAN,Fri Oct 17,,False,2025-10-17
+9,KAFANA BALKAN,Sat Oct 18,,False,2025-10-18
+9,LOS RETROS,Sun Oct 19,,False,2025-10-19
+9,Boyish,Tue Oct 21,,False,2025-10-21
+9,Nerd Nite SF,Wed Oct 22,,False,2025-10-22
+9,THE PARTY OF A SHOWGIRL: A TS12 Celebration,Thu Oct 23,,False,2025-10-23
+9,S Y Z Y G Y X,Fri Oct 24,,False,2025-10-24
+9,CHILD,Sat Oct 25,,False,2025-10-25
+9,Jess Cornelius,Sun Oct 26,,False,2025-10-26
+9,ORIHUELA,Thu Oct 30,,False,2025-10-30
+9,CHILD,Sat Oct 25,,False,2025-10-25
+9,THE PARTY OF A SHOWGIRL: A TS12 Celebration,Thu Oct 23,,False,2025-10-23
+9,Jess Cornelius,Sun Oct 26,,False,2025-10-26
+9,FIGURE EIGHT,Wed Nov 19,,False,2025-11-19
+9,MARLON FUNAKI,Sat Dec 13,,False,2025-12-13
+9,YOI TOKI,Fri Oct 31,,False,2025-10-31
+9,Tors,Sat Nov 1,,False,2025-11-01
+9,VIVIAN GIRLS,Sun Nov 2,,False,2025-11-02
+9,LAUNDRY DAY,Mon Nov 3,,False,2025-11-03
+9,After,Wed Nov 5,,False,2025-11-05
+9,feeble little horse,Thu Nov 6,,False,2025-11-06
+9,Beach Weather,Fri Nov 7,,False,2025-11-07
+9,ORLAS,Sun Nov 9,,False,2025-11-09
+9,L'ECLAIR,Mon Nov 10,,False,2025-11-10
+9,They Are Gutting a Body of Water,Tue Nov 11,,False,2025-11-11
+9,CHILD,Sat Oct 25,,False,2025-10-25
+9,THE PARTY OF A SHOWGIRL: A TS12 Celebration,Thu Oct 23,,False,2025-10-23
+9,Jess Cornelius,Sun Oct 26,,False,2025-10-26
+9,FIGURE EIGHT,Wed Nov 19,,False,2025-11-19
+9,MARLON FUNAKI,Sat Dec 13,,False,2025-12-13
+9,THE SURFRAJETTES,Thu Nov 13,,False,2025-11-13
+9,TOGETHER PANGEA,Fri Nov 14,,False,2025-11-14
+9,MOLLY GRACE,Tue Nov 18,,False,2025-11-18
+9,FIGURE EIGHT,Wed Nov 19,,False,2025-11-19
+9,Your Smith,Thu Nov 20,,False,2025-11-20
+9,NUOVO TESTAMENTO,Fri Nov 21,,False,2025-11-21
+9,MARK WILLIAM LEWIS,Sun Nov 23,,False,2025-11-23
+9,FLOCK OF DIMES,Thu Dec 4,,False,2025-12-04
+9,SAFE MIND,Fri Dec 5,,False,2025-12-05
+9,Greg Freeman,Sat Dec 6,,False,2025-12-06
+9,CHILD,Sat Oct 25,,False,2025-10-25
+9,THE PARTY OF A SHOWGIRL: A TS12 Celebration,Thu Oct 23,,False,2025-10-23
+9,Jess Cornelius,Sun Oct 26,,False,2025-10-26
+9,FIGURE EIGHT,Wed Nov 19,,False,2025-11-19
+9,MARLON FUNAKI,Sat Dec 13,,False,2025-12-13
+9,MARLON FUNAKI,Sat Dec 13,,False,2025-12-13
+9,SORRY,Fri Dec 19,,False,2025-12-19
+9,RJD2,Thu Jan 8,,False,2026-01-08
+9,Ofenbach,Fri Jan 30,,False,2026-01-30
+9,MAANU,Wed Feb 4,,False,2026-02-04
+9,CHILD,Sat Oct 25,,False,2025-10-25
+9,THE PARTY OF A SHOWGIRL: A TS12 Celebration,Thu Oct 23,,False,2025-10-23
+9,Jess Cornelius,Sun Oct 26,,False,2025-10-26
+9,FIGURE EIGHT,Wed Nov 19,,False,2025-11-19
+9,MARLON FUNAKI,Sat Dec 13,,False,2025-12-13
+13,Sun Room,2025-09-30,,False,2025-09-30 00:00:00
+13,Gimme Gimme Disco,2025-10-02,,False,2025-10-02 00:00:00
+13,Mo Lowda and The Humble,2025-10-03,,False,2025-10-03 00:00:00
+13,William Black,2025-10-04,,False,2025-10-04 00:00:00
+13,Militarie Gun,2025-10-05,,False,2025-10-05 00:00:00
+13,Deafheaven,2025-10-07,,False,2025-10-07 00:00:00
+13,Sons of Habit,2025-10-08,,False,2025-10-08 00:00:00
+13,Oliver Hazard,2025-10-09,,False,2025-10-09 00:00:00
+13,Teton Gravity Research: Pressure Drop,2025-10-10,,False,2025-10-10 00:00:00
+13,Super Diamond - The Neil Diamond Tribute,2025-10-11,,False,2025-10-11 00:00:00
+13,Cameron Whitcomb,2025-10-12,,False,2025-10-12 00:00:00
+13,Raynes,2025-10-14,,False,2025-10-14 00:00:00
+13,Stop Light Observations,2025-10-16,,False,2025-10-16 00:00:00
+13,Unleashed,2025-10-17,,False,2025-10-17 00:00:00
+13,Penny and Sparrow,2025-10-18,,False,2025-10-18 00:00:00
+13,Wednesday - Band,2025-10-22,,False,2025-10-22 00:00:00
+13,Wookiefoot,2025-10-25,,False,2025-10-25 00:00:00
+13,Melvin Seals & JGB,2025-10-30,,False,2025-10-30 00:00:00
+13,It's a 2000's Party,2025-10-31,,False,2025-10-31 00:00:00
+13,Yung Gravy,2025-11-01,,False,2025-11-01 00:00:00
+13,Waylon Wyatt,2025-11-02,,False,2025-11-02 00:00:00
+13,Shai Hulud,2025-11-05,,False,2025-11-05 00:00:00
+13,Afrobeats x Reggaeton,2025-11-06,,False,2025-11-06 00:00:00
+13,The Brothers Comatose,2025-11-07,,False,2025-11-07 00:00:00
+13,The White Buffalo,2025-11-09,,False,2025-11-09 00:00:00
+13,Rexx Life Raj,2025-11-10,,False,2025-11-10 00:00:00
+13,Felly,2025-11-13,,False,2025-11-13 00:00:00
+13,Willis,2025-11-15,,False,2025-11-15 00:00:00
+13,Hobo Johnson and The Lovemakers,2025-11-16,,False,2025-11-16 00:00:00
+13,Briscoe,2025-11-21,,False,2025-11-21 00:00:00
+13,The Surfrajettes & Bethlehem Shalom,2025-11-25,,False,2025-11-25 00:00:00
+13,Emo Nite,2025-11-29,,False,2025-11-29 00:00:00
+13,Extra Credit,2025-12-04,,False,2025-12-04 00:00:00
+13,The Velvet Rope - A NoCo 80's Dance Party,2025-12-05,,False,2025-12-05 00:00:00
+13,Yookie,2025-12-06,,False,2025-12-06 00:00:00
+13,Jamie Lissow,2025-12-07,,False,2025-12-07 00:00:00
+13,Rush Archives - Tribute to Rush,2025-12-12,,False,2025-12-12 00:00:00
+13,Musketeer Gripweed with Max Mackey Band,2025-12-13,,False,2025-12-13 00:00:00
+13,Rumours - A Fleetwood Mac Tribute,2025-12-19,,False,2025-12-19 00:00:00
+13,Switchman Sleepin',2026-01-02,,False,2026-01-02 00:00:00
+13,East Nash Grass,2026-01-18,,False,2026-01-18 00:00:00
+13,Ninajirachi,2026-01-19,,False,2026-01-19 00:00:00
+13,The Ocean Blue,2026-02-06,,False,2026-02-06 00:00:00
+13,The Strumbellas,2026-03-15,,False,2026-03-15 00:00:00
+13,Gregorian,2026-03-23,,False,2026-03-23 00:00:00
+9,Ultra Sunn,Fri Apr 24,Goth,False,2026-04-24
+9,"Brainstory, É Arenas (of Chicano Batman)",Sun Dec 7,Soul,False,2025-12-07
+9,Legend Zeppelin,Fri Feb 20,Tribute Act,False,2026-02-20
+9,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03
+9,"Nora Brown, Stephanie Coleman",Thu Jan 8,Bluegrass,False,2026-01-08
+9,Amble,Tue Sep 30,Folk,False,2025-09-30
+9,Guerilla Toss,Wed Oct 1,Alternative,False,2025-10-01
+9,The Legendary Pink Dots,Thu Oct 2,Post Punk,False,2025-10-02
+9,Josh Ritter and the Royal City Band,Fri Oct 3,Folk,False,2025-10-03
+9,Private Event,Sat Oct 4,Other Content,False,2025-10-04
+9,Acid Mothers Temple: 30th Annviersary Tour,Mon Oct 6,Psych Rock,False,2025-10-06
+9,Valencia LIVE! (Every 2nd Thursday Between 16th - 19th Street),Thu Oct 9,Other Content,False,2025-10-09
+9,Damien Jurado,Thu Oct 9,Alternative,False,2025-10-09
+9,IAMX: FAULT LINES² TOUR,Fri Oct 10,Alternative,False,2025-10-10
+9,Forrest Day,Sat Oct 11,Alternative,False,2025-10-11
+9,Ultra Sunn,Fri Apr 24,Goth,False,2026-04-24
+9,"Brainstory, É Arenas (of Chicano Batman)",Sun Dec 7,Soul,False,2025-12-07
+9,Legend Zeppelin,Fri Feb 20,Tribute Act,False,2026-02-20
+9,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03
+9,"Nora Brown, Stephanie Coleman",Thu Jan 8,Bluegrass,False,2026-01-08
+9,An Evening With Alejandro Escovedo,Tue Oct 14,Country,False,2025-10-14
+9,Hand Habits,Wed Oct 15,Alternative,False,2025-10-15
+9,Carsie Blanton,Thu Oct 16,Alternative,False,2025-10-16
+9,Fruit Bats,Sat Oct 18,Alternative,False,2025-10-18
+9,Fruit Bats,Sat Oct 18,Alternative,False,2025-10-18
+9,"TRAVIE BOBBITO, KING MOST, BELLA D. & FRIENDS",Sun Oct 19,DJ/Dance,False,2025-10-19
+9,The Bones of J.R. Jones,Thu Oct 23,Alternative,False,2025-10-23
+9,White Fence,Fri Oct 24,Psych Rock,False,2025-10-24
+9,Cobweb Cabaret,Sat Oct 25,Dance,False,2025-10-25
+9,Night Moves,Sun Oct 26,Indie,False,2025-10-26
+9,Ultra Sunn,Fri Apr 24,Goth,False,2026-04-24
+9,"Brainstory, É Arenas (of Chicano Batman)",Sun Dec 7,Soul,False,2025-12-07
+9,Legend Zeppelin,Fri Feb 20,Tribute Act,False,2026-02-20
+9,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03
+9,"Nora Brown, Stephanie Coleman",Thu Jan 8,Bluegrass,False,2026-01-08
+9,"Pachyman, Mndsgn",Tue Oct 28,Alternative,False,2025-10-28
+9,Drugdealer,Wed Oct 29,Indie,False,2025-10-29
+9,Drugdealer,Thu Oct 30,Indie,False,2025-10-30
+9,The Murder City Devils,Fri Oct 31,Alternative,False,2025-10-31
+9,The Murder City Devils,Sat Nov 1,Alternative,False,2025-11-01
+9,Rachael Yamagata,Mon Nov 3,Pop,False,2025-11-03
+9,claire rousay,Tue Nov 4,Emo,False,2025-11-04
+9,Hayden Pedigo,Wed Nov 5,Instrumental,False,2025-11-05
+9,La Luz,Thu Nov 6,Rock,False,2025-11-06
+9,La Luz,Fri Nov 7,Rock,False,2025-11-07
+9,Ultra Sunn,Fri Apr 24,Goth,False,2026-04-24
+9,"Brainstory, É Arenas (of Chicano Batman)",Sun Dec 7,Soul,False,2025-12-07
+9,Legend Zeppelin,Fri Feb 20,Tribute Act,False,2026-02-20
+9,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03
+9,"Nora Brown, Stephanie Coleman",Thu Jan 8,Bluegrass,False,2026-01-08
+9,Hot Buttered Rum,Sat Nov 8,Country,False,2025-11-08
+9,Lady Wray,Sun Nov 9,R&B,False,2025-11-09
+9,"Patterson Hood, Craig Finn",Mon Nov 10,Americana,False,2025-11-10
+9,Built to Spill,Tue Nov 11,Alternative,False,2025-11-11
+9,Built to Spill,Wed Nov 12,Alternative,False,2025-11-12
+9,Valencia LIVE! (Every 2nd Thursday Between 16th - 19th Street),Thu Nov 13,Other Content,False,2025-11-13
+9,Built to Spill,Thu Nov 13,Alternative,False,2025-11-13
+9,Arash Sobhani,Fri Nov 14,Alternative,False,2025-11-14
+9,Joshua Radin,Sun Nov 16,Alternative,False,2025-11-16
+9,Dean Johnson,Tue Nov 18,Folk,False,2025-11-18
+9,Ultra Sunn,Fri Apr 24,Goth,False,2026-04-24
+9,"Brainstory, É Arenas (of Chicano Batman)",Sun Dec 7,Soul,False,2025-12-07
+9,Legend Zeppelin,Fri Feb 20,Tribute Act,False,2026-02-20
+9,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03
+9,"Nora Brown, Stephanie Coleman",Thu Jan 8,Bluegrass,False,2026-01-08
+9,Delicate Steve,Fri Nov 21,Alternative,False,2025-11-21
+9,Agriculture,Sat Nov 22,Metal,False,2025-11-22
+9,Petty Theft,Sat Nov 29,Tribute Act,False,2025-11-29
+9,Private Event,Wed Dec 3,Other Content,False,2025-12-03
+9,"Brainstory, É Arenas (of Chicano Batman)",Sun Dec 7,Soul,False,2025-12-07
+9,Hobo Johnson,Tue Dec 9,Alternative,False,2025-12-09
+9,Private Event,Fri Dec 12,Other Content,False,2025-12-12
+9,Private Event,Sat Dec 13,Other Content,False,2025-12-13
+9,Private Event,Tue Dec 16,Other Content,False,2025-12-16
+9,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03
+11,Swervedriver,Mon Sep 29,,False,2025-09-29
+11,Quadeca,Tue Sep 30,,False,2025-09-30
+11,Quadeca,Wed Oct 1,,False,2025-10-01
+11,Lambrini Girls,Thu Oct 2,,False,2025-10-02
+11,"Nick Lowe, Patty Griffin",Fri Oct 3,,False,2025-10-03
+11,Michael Schenker,Sun Oct 5,,False,2025-10-05
+11,Sidewalks and Skeletons,Tue Oct 7,,False,2025-10-07
+11,HIRIE,Fri Oct 10,,False,2025-10-10
+11,Kingfishr,Sun Oct 12,,False,2025-10-12
+11,French Police,Tue Oct 14,,False,2025-10-14
+8,DUCKWRTH – All American Freak Show Tour,9.29,,False,2025-09-29
+8,10 Years,9.30,,False,2025-09-30
+8,Gavin James,10.1,,True,2025-10-01
+8,Nourished by Time,10.2,,False,2025-10-02
+8,Diggin’ Dirt,10.3,,False,2025-10-03
+8,Model/Actriz,10.4,,False,2025-10-04
+8,Cochise,10.5,,False,2025-10-05
+8,Night Tapes,10.7,,False,2025-10-07
+8,múm,10.8,,False,2025-10-08
+8,Jeremy Jordan & Age of Madness,10.9,,False,2025-10-09
+8,Balu Brigada,10.10,,False,2025-10-10
+8,Balu Brigada,10.10,,False,2025-10-10
+8,Electric Feels,10.11,,False,2025-10-11
+8,Rival Schools & Narrow Head,10.12,,False,2025-10-12
+8,Oddisee,10.13,,False,2025-10-13
+8,James Vickery,10.14,,False,2025-10-14
+8,Covet,10.15,,False,2025-10-15
+8,Johnny Stimson,10.16,,False,2025-10-16
+8,DURRY,10.17,,False,2025-10-17
+8,Oliver Hazard x The Last Revel: Head West,10.18,,False,2025-10-18
+8,Isabella Lovestory,10.19,,False,2025-10-19
+8,The Walters,10.19,,True,2025-10-19
+8,Aidan Bissett,10.20,,False,2025-10-20
+8,Superchunk,10.21,,False,2025-10-21
+8,"The Army, The Navy",10.23,,False,2025-10-23
+8,Frost Children,10.24,,False,2025-10-24
+8,Oklou,10.25,,False,2025-10-25
+8,quinnie,10.26,,False,2025-10-26
+8,KNEECAP,10.27,,True,2025-10-27
+8,Ela Minus,10.28,,False,2025-10-28
+8,KNEECAP – Moved to the Fox Theater,10.28,,True,2025-10-28
+8,Water From Your Eyes,10.29,,False,2025-10-29
+8,Willi Carlisle,10.30,,False,2025-10-30
+8,The Emo Night Tour,10.31,,False,2025-10-31
+8,Felly,11.1,,False,2025-11-01
+8,girlfriends,11.2,,False,2025-11-02
+8,Good Neighbours,11.5,,False,2025-11-05
+8,Ax and the Hatchetmen,11.6,,False,2025-11-06
+8,Ethan Regan,11.7,,False,2025-11-07
+8,Head Automatica,11.8,,False,2025-11-08
+8,Pete Yorn – You and Me Solo Accoustic,11.9,,False,2025-11-09
+8,Waylon Wyatt,11.10,,False,2025-11-10
+8,Home is Where,11.11,,False,2025-11-11
+8,Rochelle Jordan,11.13,,False,2025-11-13
+8,Smallpools,11.14,,False,2025-11-14
+8,DJ Mandy,11.15,,False,2025-11-15
+8,Yaelokre,11.16,,False,2025-11-16
+8,Yaelokre,11.16,,False,2025-11-16
+8,Madi Diaz,11.18,,False,2025-11-18
+8,Joel Sunny,11.19,,False,2025-11-19
+8,Tei Shi,11.20,,False,2025-11-20
+8,GEE LEE,11.21,,False,2025-11-21
+8,DARGZ,11.22,,False,2025-11-22
+8,54 Ultra,11.23,,False,2025-11-23
+8,Flamingosis,11.28,,False,2025-11-28
+8,Jens Lekman,11.30,,False,2025-11-30
+8,Audrey Hobert,12.1,,False,2025-12-01
+8,Vincent Lima,12.2,,False,2025-12-02
+8,Anna of the North,12.3,,False,2025-12-03
+8,Sydney Rose,12.4,,False,2025-12-04
+8,The Polish Ambassador,12.5,,False,2025-12-05
+8,Dragon Smoke,12.6,,False,2025-12-06
+8,"Nat Keefe Concert Carnival: Featuring Lebo, Elliot Peck, Bo Carper, and more!",12.7,,False,2025-12-07
+8,Foxwarren,12.9,,False,2025-12-09
+8,Post Animal,12.10,,False,2025-12-10
+8,The Frights,12.12,,False,2025-12-12
+8,Luvcat,12.13,,False,2025-12-13
+8,Rejjie Snow,12.14,,False,2025-12-14
+8,Donzii,12.19,,False,2025-12-19
+8,Xavier Omär,12.20,,False,2025-12-20
+8,Yseult,1.27,,False,2026-01-27
+8,MØ,1.28,,False,2026-01-28
+8,Ruston Kelly,2.2,,False,2026-02-02
+8,Andy Frasco & The U.N.,2.4,,False,2026-02-04
+8,Galdive,2.7,,False,2026-02-07
+8,Venna,2.13,,False,2026-02-13
+8,Odezenne,2.18,,False,2026-02-18
+8,Weval: CHOROPHOBIA – Album Release Tour,2.27,,False,2026-02-27
+8,Bob Schneider,2.28,,False,2026-02-28
+8,Black Pistol Fire,3.4,,False,2026-03-04
+8,Eliza McLamb,4.3,,False,2026-04-03
+15,Campfire Sessions: Luke Hahn-Zollo **AT RIVERSIDE COLORADO**,"Thu, Oct 02, 2025",,False,2025-10-02
+15,Campfire Sessions: Katya Grasso **AT RIVERSIDE COLORADO**,"Fri, Oct 10, 2025",,False,2025-10-10
+15,**FREE** Magic Beans w/ The Bramblers,"Sat, Oct 11, 2025",,False,2025-10-11
+15,"Blissfall ft. Flintwick, Midicinal, Say What?! & More **DONATION SUGGESTED**","Sun, Oct 12, 2025",,False,2025-10-12
+15,Fall Festival feat. A Brother’s Fountain (duo) **AT RIVERSIDE COLORADO**,"Fri, Oct 24, 2025",,False,2025-10-24
+15,"Fall Festival ft. The Mountain Buddies, Boredom Fighters Instrument Garden, movie screening, and more **AT RIVERSIDE COLORADO**","Sat, Oct 25, 2025",,False,2025-10-25
+15,Dance Through The Decades w/ DJ Bro Short,"Sat, Dec 06, 2025",,False,2025-12-06
+15,Dance Through The Decades w/ DJ Bro Short + Polar Plunge Couples Package,"Sat, Dec 06, 2025",,False,2025-12-06
+15,Polar Plunge **AT RIVERSIDE COLORADO**,"Sun, Dec 07, 2025",,False,2025-12-07
+15,New Year’s Couples Package,"Wed, Dec 31, 2025",,False,2025-12-31
+15,Tumbledown Shack New Years Eve Celebration Inside at The Mish!!!,"Wed, Dec 31, 2025",,False,2025-12-31
+15,2026 Riverside Renewal **AT RIVERSIDE COLORADO**,"Thu, Jan 01, 2026",,False,2026-01-01
+15,Love On Ice – Valentine’s Day Plunge **AT RIVERSIDE COLORADO**,"Sat, Feb 14, 2026",,False,2026-02-14
+15,Graham Good & The Painters + Spring Polar Plunge Couples Package,"Sat, Mar 07, 2026",,False,2026-03-07
+15,Graham Good & The Painters Inside at The Mish!!!,"Sat, Mar 07, 2026",,False,2026-03-07
+15,Spring Polar Plunge **AT RIVERSIDE COLORADO**,"Sun, Mar 08, 2026",,False,2026-03-08
+10,The Dead South,"Thu, Oct 9, 2025",,False,2025-10-09
+10,TV On The Radio,"Sat, Oct 11, 2025",,False,2025-10-11
+10,Shoreline Mafia,"Sun, Oct 12, 2025",,False,2025-10-12
+10,Purity Ring,"Tue, Oct 14, 2025",,False,2025-10-14
+10,Buckethead,"Fri, Oct 17, 2025",,False,2025-10-17
+10,Allen Stone & Ripe,"Sat, Oct 18, 2025",,False,2025-10-18
+10,The Beaches,"Sun, Oct 19, 2025",,False,2025-10-19
+10,Lil Tecca,"Tue, Oct 21, 2025",,False,2025-10-21
+10,Jeremy Zucker,"Wed, Oct 22, 2025",,False,2025-10-22
+10,Garbage,"Fri, Oct 24, 2025",,False,2025-10-24
+10,Black Rebel Motorcycle Club,"Sat, Oct 25, 2025",,False,2025-10-25
+10,THE CULT & DEATH CULT,"Mon, Oct 27, 2025",,False,2025-10-27
+10,Stephen Wilson Jr.,"Tue, Oct 28, 2025",,False,2025-10-28
+10,EVIL DEAD IN CONCERT,"Wed, Oct 29, 2025",,False,2025-10-29
+10,Joey Bada$$,"Tue, Nov 4, 2025",,False,2025-11-04
+10,BADBADNOTGOOD,"Thu, Nov 6, 2025",,False,2025-11-06
+10,Earl Sweatshirt,"Fri, Nov 7, 2025",,False,2025-11-07
+10,Aly & AJ,"Sat, Nov 8, 2025",,False,2025-11-08
+10,Freddie Gibbs & The Alchemist,"Sun, Nov 9, 2025",,False,2025-11-09
+10,Freddie Gibbs & The Alchemist,"Mon, Nov 10, 2025",,False,2025-11-10
+10,Jesse McCartney,"Sat, Nov 15, 2025",,False,2025-11-15
+10,Grizzly Bear,"Tue, Nov 18, 2025",,False,2025-11-18
+10,Lucius,"Thu, Nov 20, 2025",,False,2025-11-20
+10,Jack's Mannequin,"Fri, Nov 21, 2025",,False,2025-11-21
+10,pH-1,"Sat, Nov 22, 2025",,False,2025-11-22
+10,Motion City Soundtrack and Say Anything,"Fri, Dec 5, 2025",,False,2025-12-05
+10,UMI,"Sat, Dec 6, 2025",,False,2025-12-06
+10,Tape B,"Fri, Dec 12, 2025",,False,2025-12-12
+10,bbno$,"Sat, Feb 14, 2026",,False,2026-02-14
+10,Monolink,"Sat, Feb 28, 2026",,False,2026-02-28
+10,Rich Brian,"Fri, Mar 13, 2026",,False,2026-03-13
+10,Ashnikko,"Sat, Mar 21, 2026",,False,2026-03-21
+10,HEALTH x CARPENTER BRUT,"Tue, Mar 31, 2026",,False,2026-03-31
+10,Peter Hook & The Light,"Mon, Sep 21, 2026",,False,2026-09-21
+14,YOURS TRULY,"Thursday, October 2 @ 7:30 pm",,False,2025-10-02
+14,Durand Jones & The Indications – Flowers Tour 2025,"Saturday, October 4 @ 7:00 pm",,False,2025-10-04
+14,105.5 The Colorado Sound Welcomes,"Sunday, October 5 @ 7:00 pm",,False,2025-10-05
+14,Wilderado,"Wednesday, October 8 @ 8:00 pm",,False,2025-10-08
+14,Northern Flight: A Bluebird Music Festival Event,"Friday, October 10 @ 7:00 pm",,False,2025-10-10
+14,**Moved to Friday**Northern Flight: (night 2),"Saturday, October 11 @ 7:00 pm",,False,2025-10-11
+14,An Evening with Grateful Shred,"Saturday, October 18 @ 8:00 pm",,False,2025-10-18
+14,The Millennium Tour presented by Fool House,"Friday, October 24 @ 7:30 pm",,False,2025-10-24
+14,88.9 KRFC presents,"Saturday, October 25 @ 7:00 pm",,False,2025-10-25

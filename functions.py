@@ -7,6 +7,26 @@ from datetime import datetime, timedelta
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import os
+from selenium.common.exceptions import TimeoutException
+from datetime import date
+
+
+def parse_date(raw_date_text, date_format):
+    current_year = date.today().year
+
+    # Check if year is already in the format
+    if '%Y' in date_format or '%y' in date_format:
+        # Year is included, parse as-is
+        parsed_date = datetime.strptime(raw_date_text.strip(), date_format).date()
+    else:
+        # No year in format, add current year
+        parsed_date = datetime.strptime(f"{raw_date_text.strip()} {current_year}", f"{date_format} %Y").date()
+        
+        # If it's in the past, use next year
+        if parsed_date < date.today():
+            parsed_date = parsed_date.replace(year=current_year + 1)
+
+    return parsed_date
 
 def start_selenium():
     chrome_options = Options()
@@ -20,6 +40,15 @@ def start_selenium():
     driver.set_page_load_timeout(10)
     return driver
 
+def get_soup(url, driver):
+    try:
+        driver.get(url)
+        time.sleep(1)
+        html = driver.page_source
+        return BeautifulSoup(html, 'html.parser')
+    except TimeoutException:
+        print(f"Timeout on {url}, skipping...")
+        return None
 
 def scrape_chapel(driver):
     chapel_soups = []
@@ -151,11 +180,9 @@ def spotify_connect(client_id, client_secret, refresh_token, playlist_name='Live
         )
         playlist_id = new_playlist['id']
         print(f"Created playlist: {playlist_name}")
-        
+
     return sp, playlist_id
     
-    
-
 def clear_playlist(sp, playlist_id):
     tracks = sp.playlist_tracks(playlist_id)
     track_uris = [track['track']['uri'] for track in tracks['items']]
@@ -183,3 +210,5 @@ def add_songs_to_playlist(sp, events, playlist_id, n=4):
     print('The following artists were not found')
     for artist in not_found:
         print(artist)
+
+
