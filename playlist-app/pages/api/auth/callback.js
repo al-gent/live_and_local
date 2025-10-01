@@ -26,8 +26,6 @@ export default async function handler(req, res) {
 
   try {
     // Exchange authorization code for access tokens
-    console.log('REDIRECT_URI env var:', process.env.REDIRECT_URI);
-    console.log('Full redirect_uri being sent:', process.env.REDIRECT_URI);
     const tokenResponse = await fetch('https://accounts.spotify.com/api/token', {
       method: 'POST',
       headers: {
