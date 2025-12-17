@@ -1,9 +1,8 @@
 name: Run Spotify Scraper
-
 on:
   schedule:
-    - cron: '0 0 * * 0'  # Fixed spacing issue here too
-  workflow_dispatch:
+    - cron: '0 0 * * 0'  # Every Sunday at midnight UTC
+  workflow_dispatch:  # Manual trigger
 
 jobs:
   run-scraper:
@@ -12,19 +11,29 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    
+      
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-    
+        
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
-    
-    - name: Run scraper
+        
+    - name: Populate events
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
-      run: python -u script.py
+        DATABASE_URL_UNPOOLED: ${{ secrets.DATABASE_URL_UNPOOLED }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: python -u populate_events.py
+      
+    - name: Update playlists
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+        DATABASE_URL_UNPOOLED: ${{ secrets.DATABASE_URL_UNPOOLED }}
+      run: python -u update_playlists.py

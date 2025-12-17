@@ -15,6 +15,14 @@ const App = () => {
   const [playlists, setPlaylists] = useState([]);
   const [showPlaylists, setShowPlaylists] = useState(false);
   const [editingPlaylist, setEditingPlaylist] = useState(null);
+  const [showAddVenue, setShowAddVenue] = useState(false);
+  const [venueUrl, setVenueUrl] = useState('');
+  const [discovering, setDiscovering] = useState(false);
+  const [discoveryResult, setDiscoveryResult] = useState(null);
+  const [venueName, setVenueName] = useState('');
+  const [venueCity, setVenueCity] = useState('');
+  const [addingVenue, setAddingVenue] = useState(false);
+  const [discoveryError, setDiscoveryError] = useState(null);
 
   // Check for user data from OAuth callback
   useEffect(() => {
@@ -267,6 +275,149 @@ const App = () => {
     }
   };
 
+  const extractDomain = (url) => {
+    try {
+      const urlObj = new URL(url);
+      return urlObj.hostname.replace('www.', '');
+    } catch (e) {
+      return url;
+    }
+  };
+
+  const handleDiscoverVenue = async () => {
+    if (!venueUrl.trim()) {
+      setDiscoveryError('Please enter a venue URL');
+      return;
+    }
+
+    // Check if venue with same domain already exists
+    const urlDomain = extractDomain(venueUrl);
+    const existingVenue = venues.find(v => {
+      try {
+        const existingDomain = extractDomain(v.url);
+        return existingDomain === urlDomain;
+      } catch (e) {
+        return false;
+      }
+    });
+    
+    if (existingVenue) {
+      setDiscoveryError('This venue is already supported!');
+      return;
+    }
+
+    setDiscoveryError(null);
+    setDiscovering(true);
+    try {
+      const response = await fetch('/api/discover-venue', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ url: venueUrl }),
+      });
+
+      const result = await response.json();
+
+      if (!result.success) {
+        // Save request for manual review
+        try {
+          await fetch('/api/request-venue', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              url: venueUrl,
+              requested_by: user.id,
+              error_message: result.error,
+              discovery_metadata: result
+            }),
+          });
+        } catch (requestError) {
+          console.error('Failed to save request:', requestError);
+        }
+        
+        setDiscoveryError('Could not add venue automatically - Adam will review manually ❤️');
+        return;
+      }
+
+      setDiscoveryResult(result);
+    } catch (error) {
+      console.error('Error discovering venue:', error);
+      
+      // Save request for manual review
+      try {
+        await fetch('/api/request-venue', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            url: venueUrl,
+            requested_by: user.id,
+            error_message: 'API connection failed',
+            discovery_metadata: null
+          }),
+        });
+      } catch (requestError) {
+        console.error('Failed to save request:', requestError);
+      }
+      
+      setDiscoveryError('Could not add venue automatically - Adam will review manually ❤️');
+    } finally {
+      setDiscovering(false);
+    }
+  };
+
+  const handleAddVenue = async () => {
+    if (!venueName.trim() || !venueCity.trim()) {
+      alert('Please enter venue name and city');
+      return;
+    }
+
+    setAddingVenue(true);
+    try {
+      const response = await fetch('/api/add-venue', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: venueName,
+          city: venueCity,
+          url: venueUrl,
+          scraping_config: discoveryResult.config,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert(`Venue "${venueName}" added successfully!`);
+        // Reset state
+        setShowAddVenue(false);
+        setVenueUrl('');
+        setDiscoveryResult(null);
+        setVenueName('');
+        setVenueCity('');
+        // Refresh venues
+        const venuesResponse = await fetch('/api/venues');
+        if (venuesResponse.ok) {
+          const venuesData = await venuesResponse.json();
+          setVenues(venuesData);
+        }
+      } else {
+        alert(`Error: ${result.error}`);
+      }
+    } catch (error) {
+      console.error('Error adding venue:', error);
+      alert('Failed to add venue. Please try again.');
+    } finally {
+      setAddingVenue(false);
+    }
+  };
+
   if (!user) {
     return (
       <div className="container">
@@ -376,6 +527,131 @@ const App = () => {
     );
   }
 
+  // Add Venue view
+  if (showAddVenue) {
+    return (
+      <div className="container">
+        <div className="header">
+          <h1>🕺🏾live&local💃🏾</h1>
+          <button onClick={() => {
+            setShowAddVenue(false);
+            setVenueUrl('');
+            setDiscoveryResult(null);
+            setDiscoveryError(null);
+          }} className="back-btn">
+            ← Back
+          </button>
+        </div>
+
+        <h2>Add Venue</h2>
+
+        {!discoveryResult ? (
+          <>
+            <p style={{marginBottom: '20px', color: '#b0b0b0'}}>
+              Enter a venue URL that contains all the events and we'll see if we can add it automatically.
+            </p>
+            
+            {discoveryError && (
+              <div style={{
+                padding: '15px',
+                border: '2px solid #ff6b6b',
+                borderRadius: '8px',
+                background: '#2e1a1a',
+                marginBottom: '20px',
+                color: '#ff6b6b'
+              }}>
+                {discoveryError}
+              </div>
+            )}
+            
+            <div className="form-group">
+              <label>Venue Calendar URL</label>
+              <input
+                type="text"
+                value={venueUrl}
+                onChange={(e) => {
+                  setVenueUrl(e.target.value);
+                  setDiscoveryError(null);
+                }}
+                placeholder="https://example-venue.com/shows"
+                style={{width: '100%'}}
+              />
+            </div>
+
+            <button 
+              onClick={handleDiscoverVenue}
+              className="btn-primary"
+              disabled={!venueUrl.trim() || discovering}
+            >
+              {discovering ? 'Discovering...' : 'Discover Scraping Settings'}
+            </button>
+          </>
+        ) : (
+          <>
+            <div style={{
+              padding: '20px',
+              border: '2px solid #1db954',
+              borderRadius: '8px',
+              background: '#1a2e1a',
+              marginBottom: '30px'
+            }}>
+              <h3 style={{color: '#1db954', marginBottom: '15px'}}>✓ Configuration Discovered</h3>
+              <p style={{color: '#b0b0b0', marginBottom: '15px'}}>
+                Found <strong>{discoveryResult.config._metadata.num_events_found}</strong> events.
+                Date parsing success: <strong>{Math.round(discoveryResult.config._metadata.date_parse_success_rate * 100)}%</strong>
+              </p>
+
+              {discoveryResult.sample_events && discoveryResult.sample_events.length > 0 && (
+                <div style={{marginTop: '15px'}}>
+                  <p style={{fontSize: '0.9em', color: '#b0b0b0', marginBottom: '10px'}}>Sample events found:</p>
+                  {discoveryResult.sample_events.map((event, i) => (
+                    <div key={i} style={{
+                      padding: '8px',
+                      background: 'rgba(0,0,0,0.3)',
+                      margin: '5px 0',
+                      borderRadius: '4px',
+                      fontSize: '0.9em'
+                    }}>
+                      <strong>{event.artist}</strong> - {event.raw_date}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label>Venue Name *</label>
+              <input
+                type="text"
+                value={venueName}
+                onChange={(e) => setVenueName(e.target.value)}
+                placeholder="The Independent"
+              />
+            </div>
+
+            <div className="form-group">
+              <label>City *</label>
+              <input
+                type="text"
+                value={venueCity}
+                onChange={(e) => setVenueCity(e.target.value)}
+                placeholder="San Francisco"
+              />
+            </div>
+
+            <button 
+              onClick={handleAddVenue}
+              className="btn-primary"
+              disabled={!venueName.trim() || !venueCity.trim() || addingVenue}
+            >
+              {addingVenue ? 'Adding Venue...' : 'Add Venue'}
+            </button>
+          </>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className="container">
       <div className="header">
@@ -428,6 +704,19 @@ const App = () => {
                   </div>
                 </div>
               ))}
+              <div
+                className="venue-card"
+                onClick={() => setShowAddVenue(true)}
+                style={{
+                  border: '2px dashed #1db954',
+                  background: 'rgba(29, 185, 84, 0.05)'
+                }}
+              >
+                <strong style={{color: '#1db954'}}>Don't see your venue?</strong>
+                <div style={{fontSize: '14px', color: '#1db954', marginTop: '5px'}}>
+                  add it here
+                </div>
+              </div>
             </div>
           ) : (
             <>
@@ -445,7 +734,6 @@ const App = () => {
                       onClick={() => handleVenueToggle(venue.venue_id)}
                     >
                       <strong>{venue.name}</strong>
-                      {venue.address && <div style={{fontSize: '14px', color: '#b0b0b0'}}>{venue.address}</div>}
                     </div>
                   ))}
               </div>

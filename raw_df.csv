@@ -1,0 +1,312 @@
+,venue_id,raw_event_name,raw_date_text,genres,is_cancelled,parsed_date,venue_name
+0,7,The Third Mind,Sat Mar 21,Psych Rock,False,2026-03-21,The Chapel
+1,7,Locust,Thu Feb 12,Electronic,False,2026-02-12,The Chapel
+2,7,Cat Clyde,Sun Mar 22,Folk,False,2026-03-22,The Chapel
+3,7,The Brian Jonestown Massacre,Sat Mar 7,Psych Rock,False,2026-03-07,The Chapel
+4,7,The Brian Jonestown Massacre,Fri Mar 6,Psych Rock,False,2026-03-06,The Chapel
+5,7,Private Event,Thu Dec 18,Other Content,False,2025-12-18,The Chapel
+6,7,Sister Nancy,Fri Dec 19,Reggae,False,2025-12-19,The Chapel
+7,7,Bud E. Luv,Tue Dec 23,Classic Rock,False,2025-12-23,The Chapel
+8,7,Chuck Prophet & His Cumbia Shoes,Fri Dec 26,Alternative,False,2025-12-26,The Chapel
+9,7,Chuck Prophet & The Mission Express,Sat Dec 27,Alternative,False,2025-12-27,The Chapel
+10,7,"The Mystery Lights, Levitation Room",Tue Dec 30,Psych Rock,False,2025-12-30,The Chapel
+11,7,Fantastic Negrito,Wed Dec 31,Blues,False,2025-12-31,The Chapel
+12,7,AZ/DZ,Sat Jan 3,Tribute Act,False,2026-01-03,The Chapel
+13,7,"Nora Brown, Stephanie Coleman",Thu Jan 8,Bluegrass,False,2026-01-08,The Chapel
+14,7,Ariel Pink,Fri Jan 9,Alternative,False,2026-01-09,The Chapel
+20,7,Western Standard Time Ska Orchestra,Sat Jan 10,Ska,False,2026-01-10,The Chapel
+21,7,"Ryley Walker, Papa M",Thu Jan 15,Alternative,False,2026-01-15,The Chapel
+22,7,Analog Dog,Fri Jan 16,Alternative,False,2026-01-16,The Chapel
+23,7,ILLEAGLES,Sat Jan 17,Tribute Act,False,2026-01-17,The Chapel
+24,7,Wand,Thu Jan 22,Psych Rock,False,2026-01-22,The Chapel
+25,7,Soul Brass Band,Fri Jan 23,Soul,False,2026-01-23,The Chapel
+26,7,Fleetwood Mask,Sat Jan 24,Tribute Act,False,2026-01-24,The Chapel
+27,7,Seahaven,Sun Jan 25,Alternative,False,2026-01-25,The Chapel
+28,7,The Antlers,Wed Jan 28,Alternative,False,2026-01-28,The Chapel
+29,7,Temptation: A Tribute to New Order,Fri Jan 30,Tribute Act,False,2026-01-30,The Chapel
+35,7,"Tyler Ramsey, Carl Broemel",Sat Jan 31,Folk,False,2026-01-31,The Chapel
+36,7,Tropical Fuck Storm,Tue Feb 3,Post Punk,False,2026-02-03,The Chapel
+37,7,Samm Henshaw,Tue Feb 10,R&B,False,2026-02-10,The Chapel
+38,7,SPRINTS,Wed Feb 11,Alternative,False,2026-02-11,The Chapel
+40,7,Cobweb Cabaret,Fri Feb 13,Dance,False,2026-02-13,The Chapel
+41,7,Cold Cave,Sun Feb 15,Goth,False,2026-02-15,The Chapel
+42,7,Rebirth Brass Band,Tue Feb 17,Funk,False,2026-02-17,The Chapel
+43,7,Legend Zeppelin,Fri Feb 20,Tribute Act,False,2026-02-20,The Chapel
+44,7,Mat Kerekes,Sat Feb 21,Alternative,False,2026-02-21,The Chapel
+50,7,The Fiery Furnaces,Thu Feb 26,Alternative,False,2026-02-26,The Chapel
+51,7,Bitchin Bajas,Fri Feb 27,Electronic,False,2026-02-27,The Chapel
+52,7,The Sun Ra Arkestra,Sat Feb 28,Jazz,False,2026-02-28,The Chapel
+53,7,The Sun Ra Arkestra,Sun Mar 1,Jazz,False,2026-03-01,The Chapel
+54,7,Alexander Stewart,Tue Mar 3,Pop,False,2026-03-03,The Chapel
+55,7,Carsie Blanton,Thu Mar 5,Alternative,False,2026-03-05,The Chapel
+58,7,Blackwater Holylight,Fri Mar 13,Doom/Stoner Metal,False,2026-03-13,The Chapel
+59,7,Malibu,Wed Mar 18,Electronic,False,2026-03-18,The Chapel
+65,7,"The Sam Chase, The Sam Chase & The Untraditional",Fri Mar 20,Rock,False,2026-03-20,The Chapel
+68,7,mclusky,Mon Mar 30,Alternative,False,2026-03-30,The Chapel
+69,7,AJ Lee & Blue Summit,Fri Apr 3,Bluegrass,False,2026-04-03,The Chapel
+70,7,AJ Lee & Blue Summit,Sat Apr 4,Bluegrass,False,2026-04-04,The Chapel
+71,7,Ultra Sunn,Fri Apr 24,Electronic,False,2026-04-24,The Chapel
+72,7,Depresión Sonora,Tue Apr 28,Alternative,False,2026-04-28,The Chapel
+73,7,The Wedding Present: Seamonsters 35th Anniversary,Thu Apr 30,Indie,False,2026-04-30,The Chapel
+74,7,Isobel Campbell,Thu May 28,Alternative,False,2026-05-28,The Chapel
+75,11,4 Non Blondes,Wed Dec 17,,False,2025-12-17,The Great American Music Hall
+76,11,4 Non Blondes,Thu Dec 18,,False,2025-12-18,The Great American Music Hall
+77,11,The Mother Hips,Fri Dec 19,,False,2025-12-19,The Great American Music Hall
+79,11,The Mother Hips,Sat Dec 20,,False,2025-12-20,The Great American Music Hall
+80,11,The Mother Hips,Sun Dec 21,,False,2025-12-21,The Great American Music Hall
+81,11,Oakland Interfaith Gospel Choir,Wed Dec 24,,False,2025-12-24,The Great American Music Hall
+82,11,Jerry's Middle Finger,Fri Dec 26,,False,2025-12-26,The Great American Music Hall
+83,11,Jerry's Middle Finger,Sat Dec 27,,False,2025-12-27,The Great American Music Hall
+84,11,High on Fire,Tue Dec 30,,False,2025-12-30,The Great American Music Hall
+85,11,High on Fire,Wed Dec 31,,False,2025-12-31,The Great American Music Hall
+86,14,FoCo OZZFEST,"Thursday, December 18 @ 7:00 pm",,False,2025-12-18,Washington's
+87,14,That Eighties Band,"Friday, December 19 @ 8:00 pm",,False,2025-12-19,Washington's
+88,14,88.9 KRFC presents,"Saturday, December 20 @ 8:00 pm",,False,2025-12-20,Washington's
+89,8,Orgōne,12.18,,False,2025-12-18,The Independent
+90,8,Donzii,12.19,,True,2025-12-19,The Independent
+91,8,Xavier Omär,12.20,,False,2025-12-20,The Independent
+92,8,The Emo Night Tour,12.27,,False,2025-12-27,The Independent
+93,8,Paul Cauthen,12.30,,False,2025-12-30,The Independent
+94,8,Paul Cauthen,12.31,,False,2025-12-31,The Independent
+95,8,The Seshen & Rituals of Mine,1.16,,False,2026-01-16,The Independent
+96,8,Lost Kings,1.17,,False,2026-01-17,The Independent
+97,8,Earlybirds Club,1.23,,False,2026-01-23,The Independent
+98,8,Austra,1.24,,False,2026-01-24,The Independent
+99,8,Whitney Hanson,1.25,,False,2026-01-25,The Independent
+100,8,Yseult,1.27,,True,2026-01-27,The Independent
+101,8,MØ,1.28,,True,2026-01-28,The Independent
+102,8,Moontricks,1.29,,False,2026-01-29,The Independent
+103,8,Frak Presents: Four Square – Release Party!,1.30,,False,2026-01-30,The Independent
+104,8,Local DJ’s Night,1.31,,False,2026-01-31,The Independent
+105,8,Ruston Kelly,2.2,,False,2026-02-02,The Independent
+106,8,Andy Frasco & The U.N.,2.4,,False,2026-02-04,The Independent
+107,8,Grace Bowers,2.5,,False,2026-02-05,The Independent
+108,8,Electric Feels,2.6,,False,2026-02-06,The Independent
+109,8,Galdive,2.7,,False,2026-02-07,The Independent
+110,8,Clap Your Hands Say Yeah,2.9,,False,2026-02-09,The Independent
+111,8,Daniel Donato’s Cosmic Country,2.11,,False,2026-02-11,The Independent
+112,8,Daniel Donato’s Cosmic Country,2.12,,False,2026-02-12,The Independent
+113,8,Venna,2.13,,False,2026-02-13,The Independent
+114,8,Odezenne,2.18,,False,2026-02-18,The Independent
+115,8,The Polish Ambassador,2.19,,False,2026-02-19,The Independent
+116,8,DENM,2.20,,False,2026-02-20,The Independent
+117,8,Jesse Baez,2.21,,False,2026-02-21,The Independent
+118,8,Fox Stevenson,2.22,,False,2026-02-22,The Independent
+119,8,((( O ))),2.26,,False,2026-02-26,The Independent
+120,8,Weval: CHOROPHOBIA – Album Release Tour,2.27,,False,2026-02-27,The Independent
+121,8,Bob Schneider,2.28,,False,2026-02-28,The Independent
+122,8,Mexican Slum Rats,3.1,,False,2026-03-01,The Independent
+123,8,JUNNY: [null] Tour,3.2,,False,2026-03-02,The Independent
+124,8,Black Pistol Fire,3.4,,False,2026-03-04,The Independent
+125,8,Natalie Bergman,3.5,,False,2026-03-05,The Independent
+126,8,Grieves,3.6,,False,2026-03-06,The Independent
+127,8,Guitarricadelafuente,3.7,,False,2026-03-07,The Independent
+128,8,Bryant Barnes,3.8,,False,2026-03-08,The Independent
+129,8,Sam Greenfield,3.10,,False,2026-03-10,The Independent
+130,8,Witchz,3.11,,False,2026-03-11,The Independent
+131,8,RIO KOSTA,3.13,,False,2026-03-13,The Independent
+132,8,Earlybirds Club,3.14,,False,2026-03-14,The Independent
+133,8,Son Little,3.18,,False,2026-03-18,The Independent
+134,8,Vendredi sur Mer,3.19,,False,2026-03-19,The Independent
+135,8,Parlor Greens,3.20,,False,2026-03-20,The Independent
+136,8,Los Amigos Invisibles,3.21,,False,2026-03-21,The Independent
+137,8,The Nude Party,3.22,,False,2026-03-22,The Independent
+138,8,Chill Towards Enlightenment: A Stoke Seminar with Chad Goes Deep,3.25,,False,2026-03-25,The Independent
+139,8,Lithe,3.26,,False,2026-03-26,The Independent
+140,8,The Motet,3.27,,False,2026-03-27,The Independent
+141,8,Voxtrot,3.28,,False,2026-03-28,The Independent
+142,8,Tophouse,3.29,,False,2026-03-29,The Independent
+143,8,Quarters,3.30,,False,2026-03-30,The Independent
+144,8,Circles Around The Sun,4.2,,False,2026-04-02,The Independent
+145,8,Eliza McLamb,4.3,,False,2026-04-03,The Independent
+146,8,The Moss,4.6,,False,2026-04-06,The Independent
+147,8,Maria Somerville,4.10,,False,2026-04-10,The Independent
+148,8,saturdays at your place,4.11,,False,2026-04-11,The Independent
+149,8,Die Spitz,4.13,,False,2026-04-13,The Independent
+150,8,Die Spitz,4.14,,False,2026-04-14,The Independent
+151,8,NewDad,4.15,,False,2026-04-15,The Independent
+152,8,ART BRUT,4.21,,False,2026-04-21,The Independent
+153,8,Langhorne Slim: The Dreamin’ Kind Tour,4.22,,False,2026-04-22,The Independent
+154,8,Chris Grey,4.26,,False,2026-04-26,The Independent
+155,8,Asim Azhar,4.30,,False,2026-04-30,The Independent
+156,8,Sports,5.9,,False,2026-05-09,The Independent
+157,8,Allie X,5.15,,False,2026-05-15,The Independent
+158,8,Yumi Zouma,5.16,,False,2026-05-16,The Independent
+159,8,Red Rum Club,5.19,,False,2026-05-19,The Independent
+160,8,Rose Gray,5.24,,False,2026-05-24,The Independent
+161,9,wilt,Thu Dec 18,,False,2025-12-18,Rickshaw Stop
+162,9,SORRY,Fri Dec 19,,False,2025-12-19,Rickshaw Stop
+163,9,"EMO NITE at Rickshaw Stop - San Francisco,  CA",Sat Dec 20,,False,2025-12-20,Rickshaw Stop
+164,9,"YOI TOKI, Vantage",Wed Dec 31,,False,2025-12-31,Rickshaw Stop
+165,9,RJD2,Thu Jan 8,,False,2026-01-08,Rickshaw Stop
+166,9,Westones,Fri Jan 9,,False,2026-01-09,Rickshaw Stop
+167,9,"YEARBOOK NIGHT, Lazer Beam",Sat Jan 10,,False,2026-01-10,Rickshaw Stop
+168,9,Jason Simon,Wed Jan 14,,False,2026-01-14,Rickshaw Stop
+169,9,Everyone Is Dirty,Thu Jan 15,,False,2026-01-15,Rickshaw Stop
+170,9,THE EXILE,Fri Jan 16,,False,2026-01-16,Rickshaw Stop
+172,9,NOW THAT'S WHAT I CALL ITALO DISCO,Sat Jan 17,,False,2026-01-17,Rickshaw Stop
+173,9,BROADWAY RAVE,Sat Feb 7,,False,2026-02-07,Rickshaw Stop
+174,9,all your friends,Fri Feb 6,,False,2026-02-06,Rickshaw Stop
+175,9,Lucy Bedroque,Wed Apr 22,,False,2026-04-22,Rickshaw Stop
+177,9,Buzzed Lightbeer,Wed Jan 21,,False,2026-01-21,Rickshaw Stop
+178,9,Gumby’s Junk,Thu Jan 22,,False,2026-01-22,Rickshaw Stop
+179,9,Dutch Interior,Fri Jan 23,,False,2026-01-23,Rickshaw Stop
+180,9,Small Crush,Sat Jan 24,,False,2026-01-24,Rickshaw Stop
+181,9,Sqwerv,Thu Jan 29,,False,2026-01-29,Rickshaw Stop
+182,9,Treasures,Fri Jan 30,,False,2026-01-30,Rickshaw Stop
+183,9,MAANU,Wed Feb 4,,False,2026-02-04,Rickshaw Stop
+184,9,THE RURAL ALBERTA ADVANTAGE,Thu Feb 5,,False,2026-02-05,Rickshaw Stop
+192,9,Cherub,Thu Feb 12,,False,2026-02-12,Rickshaw Stop
+193,9,Super Greens,Fri Feb 13,,False,2026-02-13,Rickshaw Stop
+194,9,Blood Cultures,Sun Feb 15,,False,2026-02-15,Rickshaw Stop
+195,9,THE PAINS OF BEING PURE AT HEART,Fri Feb 20,,False,2026-02-20,Rickshaw Stop
+196,9,rum.gold,Tue Feb 24,,False,2026-02-24,Rickshaw Stop
+197,9,WINSTON SURFSHIRT,Thu Feb 26,,False,2026-02-26,Rickshaw Stop
+198,9,piri & tommy,Wed Mar 18,,False,2026-03-18,Rickshaw Stop
+199,9,Timecop1983,Thu Mar 19,,False,2026-03-19,Rickshaw Stop
+200,9,SESSA,Sat Mar 21,,False,2026-03-21,Rickshaw Stop
+206,9,K.MARO,Mon Mar 23,,False,2026-03-23,Rickshaw Stop
+207,9,MOLINA,Thu Mar 26,,False,2026-03-26,Rickshaw Stop
+208,9,"DREAM,  IVORY",Fri Mar 27,,False,2026-03-27,Rickshaw Stop
+209,9,Sword II,Mon Mar 30,,False,2026-03-30,Rickshaw Stop
+210,9,Worry Club,Tue Mar 31,,False,2026-03-31,Rickshaw Stop
+211,9,Des Rocs,Wed Apr 1,,False,2026-04-01,Rickshaw Stop
+212,9,TOKYO TEA ROOM,Fri Apr 3,,False,2026-04-03,Rickshaw Stop
+213,9,WESTERMAN,Sat Apr 4,,False,2026-04-04,Rickshaw Stop
+214,9,COURTNEY MARIE ANDREWS,Mon Apr 6,,False,2026-04-06,Rickshaw Stop
+215,9,Ulrika Spacek,Tue Apr 7,,False,2026-04-07,Rickshaw Stop
+221,9,Remember Sports,Sat Apr 18,,False,2026-04-18,Rickshaw Stop
+223,9,Getdown Services,Fri Apr 24,,False,2026-04-24,Rickshaw Stop
+224,9,Cornelia Murr,Wed May 13,,False,2026-05-13,Rickshaw Stop
+230,10,Berner,"Sat, Dec 20, 2025",,False,2025-12-20,The Warfield
+231,10,Elevation Rhythm,"Sat, Jan 24, 2026",,False,2026-01-24,The Warfield
+232,10,bbno$,"Sat, Feb 14, 2026",,False,2026-02-14,The Warfield
+233,10,Monolink,"Sat, Feb 28, 2026",,False,2026-02-28,The Warfield
+234,10,Gogol Bordello,"Fri, Mar 6, 2026",,False,2026-03-06,The Warfield
+235,10,Melvin Seals & JGB,"Sat, Mar 7, 2026",,False,2026-03-07,The Warfield
+236,10,Rich Brian,"Fri, Mar 13, 2026",,False,2026-03-13,The Warfield
+237,10,Black Label Society,"Sat, Mar 14, 2026",,False,2026-03-14,The Warfield
+238,10,Wim Hof,"Thu, Mar 19, 2026",,False,2026-03-19,The Warfield
+239,10,Ashnikko,"Sat, Mar 21, 2026",,False,2026-03-21,The Warfield
+240,10,HEALTH x CARPENTER BRUT,"Tue, Mar 31, 2026",,False,2026-03-31,The Warfield
+241,10,St. Paul & The Broken Bones,"Wed, Apr 1, 2026",,False,2026-04-01,The Warfield
+242,10,Ruel,"Sun, Apr 5, 2026",,False,2026-04-05,The Warfield
+243,10,Oklou,"Fri, Apr 17, 2026",,False,2026-04-17,The Warfield
+244,10,Cory Wong,"Fri, Apr 24, 2026",,False,2026-04-24,The Warfield
+245,10,Helloween,"Thu, Apr 30, 2026",,False,2026-04-30,The Warfield
+246,10,Bert Kreischer,"Sun, May 3, 2026",,False,2026-05-03,The Warfield
+247,10,Chet Faker,"Tue, May 5, 2026",,False,2026-05-05,The Warfield
+248,10,Peter Hook & The Light,"Mon, Sep 21, 2026",,False,2026-09-21,The Warfield
+249,12,Best of San Francisco Stand-up Comedy,"Thu, Jan 15",,False,2026-01-15,Neck of the Woods
+250,12,Black Eyes/ Vulture Feather/ The Intima,"Sat, Jan 17",,False,2026-01-17,Neck of the Woods
+251,12,Between Realms/ Burden of Oath/ VBN/ Ourselves Among Others/ Guns for Sick Children,"Sun, Jan 18",,False,2026-01-18,Neck of the Woods
+252,12,Salsa Crazy Mondays,"Mon, Jan 19",,False,2026-01-19,Neck of the Woods
+253,12,Magnitude/ Envision/ Firestarter/ Stand Tall/ Eliminators,"Mon, Jan 19",,False,2026-01-19,Neck of the Woods
+254,12,Karaoke Tuesday,"Tue, Jan 20",,False,2026-01-20,Neck of the Woods
+255,12,Best of San Francisco Stand-up Comedy,"Thu, Jan 22",,False,2026-01-22,Neck of the Woods
+256,12,Vesseles/ Viscelator/ Posthuman/ Bezaliel/ Post Heaven/ Tehmodhjin,"Sat, Jan 24",,False,2026-01-24,Neck of the Woods
+257,12,Salsa Crazy Mondays,"Mon, Jan 26",,False,2026-01-26,Neck of the Woods
+258,12,Karaoke Tuesday,"Tue, Jan 27",,False,2026-01-27,Neck of the Woods
+259,12,Best of San Francisco Stand-up Comedy,"Thu, Jan 29",,False,2026-01-29,Neck of the Woods
+260,12,Salsa Crazy Mondays,"Mon, Feb 2",,False,2026-02-02,Neck of the Woods
+261,12,Karaoke Tuesday,"Tue, Feb 3",,False,2026-02-03,Neck of the Woods
+262,12,Temptress/ Cattlemass/ Barren Altar/ Disastroid,"Wed, Feb 4",,False,2026-02-04,Neck of the Woods
+263,12,Best of San Francisco Stand-up Comedy,"Thu, Feb 5",,False,2026-02-05,Neck of the Woods
+264,12,ESC/ Aggravated Assault/ SHRØUD/ Delve,"Fri, Feb 6",,False,2026-02-06,Neck of the Woods
+265,12,Ashes At Last/ Fall Of The King/ Execution/ Amulet/ Sovereign Suicide,"Sat, Feb 7",,False,2026-02-07,Neck of the Woods
+266,12,Salsa Crazy Mondays,"Mon, Feb 9",,False,2026-02-09,Neck of the Woods
+285,13,Hardcore 4 The Holidays,2025-12-18,,False,2025-12-18 00:00:00,The Aggie Theatre
+286,13,Rumours - A Fleetwood Mac Tribute,2025-12-19,,False,2025-12-19 00:00:00,The Aggie Theatre
+287,13,Daft Disko,2025-12-31,,False,2025-12-31 00:00:00,The Aggie Theatre
+288,13,Switchman Sleepin',2026-01-02,,False,2026-01-02 00:00:00,The Aggie Theatre
+289,13,Shovelin Stone,2026-01-09,,False,2026-01-09 00:00:00,The Aggie Theatre
+290,13,East Nash Grass,2026-01-18,,False,2026-01-18 00:00:00,The Aggie Theatre
+291,13,Ninajirachi,2026-01-19,,False,2026-01-19 00:00:00,The Aggie Theatre
+292,13,UpDating,2026-01-22,,False,2026-01-22 00:00:00,The Aggie Theatre
+293,13,Dead Floyd,2026-01-23,,False,2026-01-23 00:00:00,The Aggie Theatre
+294,13,Jammy Buffet - Tribute to Jimmy Buffet,2026-01-24,,False,2026-01-24 00:00:00,The Aggie Theatre
+295,13,Josh Teed,2026-01-30,,False,2026-01-30 00:00:00,The Aggie Theatre
+296,13,The Ocean Blue,2026-02-06,,False,2026-02-06 00:00:00,The Aggie Theatre
+297,13,Jerro,2026-02-07,,False,2026-02-07 00:00:00,The Aggie Theatre
+298,13,The Record Company,2026-02-12,,False,2026-02-12 00:00:00,The Aggie Theatre
+299,13,Penelope Road,2026-02-26,,False,2026-02-26 00:00:00,The Aggie Theatre
+300,13,The Devil Makes Three,2026-02-28,,False,2026-02-28 00:00:00,The Aggie Theatre
+301,13,Colony House,2026-03-06,,False,2026-03-06 00:00:00,The Aggie Theatre
+302,13,Merkules,2026-03-11,,False,2026-03-11 00:00:00,The Aggie Theatre
+303,13,Young & Dead,2026-03-14,,False,2026-03-14 00:00:00,The Aggie Theatre
+304,13,The Strumbellas,2026-03-15,,False,2026-03-15 00:00:00,The Aggie Theatre
+305,13,ShadowGrass,2026-03-19,,False,2026-03-19 00:00:00,The Aggie Theatre
+306,13,Grieves,2026-03-21,,False,2026-03-21 00:00:00,The Aggie Theatre
+307,13,Tophouse,2026-03-22,,False,2026-03-22 00:00:00,The Aggie Theatre
+308,13,Gregorian,2026-03-23,,False,2026-03-23 00:00:00,The Aggie Theatre
+309,13,Bad Suns,2026-03-28,,False,2026-03-28 00:00:00,The Aggie Theatre
+310,13,Los Amigos Invisibles,2026-03-29,,False,2026-03-29 00:00:00,The Aggie Theatre
+311,13,Witchz,2026-04-29,,False,2026-04-29 00:00:00,The Aggie Theatre
+312,13,Langhorne Slim,2026-05-01,,False,2026-05-01 00:00:00,The Aggie Theatre
+313,13,The Moss,2026-05-13,,False,2026-05-13 00:00:00,The Aggie Theatre
+314,32,The Jazz Section,Wednesday December 17th,,False,2025-12-17,Avogardro's Number
+315,32,Al loves El,Thursday December 18th,,False,2025-12-18,Avogardro's Number
+316,32,Just Jazz Quintet,Friday December 19th,,False,2025-12-19,Avogardro's Number
+317,32,Jingle Bangerz,Friday December 19th,,False,2025-12-19,Avogardro's Number
+318,32,Clark Street Station,Saturday December 20th,,False,2025-12-20,Avogardro's Number
+319,32,Open Mic!,Tuesday December 23rd,,False,2025-12-23,Avogardro's Number
+320,32,Defunkl,Friday December 26th,,False,2025-12-26,Avogardro's Number
+321,32,High Plains Blues Society with Blues Sinners,Saturday December 27th,,False,2025-12-27,Avogardro's Number
+322,32,Harmony Hotshots,Sunday December 28th,,False,2025-12-28,Avogardro's Number
+323,32,NYE Archie Funker Both Shows,Wednesday December 31st,,False,2025-12-31,Avogardro's Number
+324,32,NYE Archie Funker Early Show,Wednesday December 31st,,False,2025-12-31,Avogardro's Number
+325,32,NYE Archie Funker Late Show,Wednesday December 31st,,False,2025-12-31,Avogardro's Number
+326,32,Poudre River Irregulars,Friday January 2nd,,False,2026-01-02,Avogardro's Number
+327,32,"Frogboat, Riding Carpets, Yellow/Knife",Saturday January 10th,,False,2026-01-10,Avogardro's Number
+328,32,Blue Monday,Monday January 12th,,False,2026-01-12,Avogardro's Number
+329,32,Hell's Belles with The Blackouts,Sunday January 18th,,False,2026-01-18,Avogardro's Number
+330,32,Dance Night,Thursday January 22nd,,False,2026-01-22,Avogardro's Number
+331,32,Ansel and The Brain Tattoos,Friday January 23rd,,False,2026-01-23,Avogardro's Number
+332,32,After the Fire,Friday January 30th,,False,2026-01-30,Avogardro's Number
+333,32,Bob Marley Birthday Celebration w/ Wake Up And Live,Saturday January 31st,,False,2026-01-31,Avogardro's Number
+334,32,David Ramirez w/ Sharon Silva,Sunday February 1st,,False,2026-02-01,Avogardro's Number
+335,32,Blue Canyon Boys,Sunday March 1st,,False,2026-03-01,Avogardro's Number
+336,32,Kendall Street Company: Lover's Tour 2026 w/ Third Turn,Thursday March 5th,,False,2026-03-05,Avogardro's Number
+337,32,Ruby Stew,Saturday March 28th,,False,2026-03-28,Avogardro's Number
+338,32,Space Bacon,Saturday April 11th,,False,2026-04-11,Avogardro's Number
+339,34,A Winter’s Eve with Megan Burtt and Brent Cowles,"Wednesday, December 17 @ 7:00 pm",,False,2025-12-17,The Armory
+340,36,Jesse Gold,"March 26, 2026",,False,2026-03-26,Cafe du Nord & Swedish American Hall
+341,36,Tyler Hilton & Kate Voegele with Gina Miles,"January 19, 2026",,False,2026-01-19,Cafe du Nord & Swedish American Hall
+342,36,Monster Rally with RUMTUM,"January 21, 2026",,False,2026-01-21,Cafe du Nord & Swedish American Hall
+343,36,"Dan Mangan, and Israel Nebeker","February 3, 2026",,False,2026-02-03,Cafe du Nord & Swedish American Hall
+344,36,Lola Kirke with Sabine McCalla,"February 24, 2026",,False,2026-02-24,Cafe du Nord & Swedish American Hall
+345,36,Lady Blackbird,"March 4, 2026",,False,2026-03-04,Cafe du Nord & Swedish American Hall
+346,36,Why All The Drama: A Solo Show by Eric Williams,"March 4, 2026",,False,2026-03-04,Cafe du Nord & Swedish American Hall
+355,38,GWAR,Fri Apr 17,,False,2026-04-17,Channel 24
+356,38,Currents / ERRA,Fri Apr 10,,False,2026-04-10,Channel 24
+357,38,Alex G,Thu May 07,,False,2026-05-07,Channel 24
+358,38,Adam Ray: WHO IS ME Tour,Thu Jan 08,,False,2026-01-08,Channel 24
+359,15,New Year’s Couples Package + Lodging,"Wed, Dec 31, 2025",,False,2025-12-31,The Mishawaka 
+360,15,Tumbledown Shack New Years Eve Celebration Inside at The Mish!!!,"Wed, Dec 31, 2025",,False,2025-12-31,The Mishawaka 
+361,15,2026 Riverside Renewal **AT RIVERSIDE COLORADO**,"Thu, Jan 01, 2026",,False,2026-01-01,The Mishawaka 
+362,15,Love On Ice – Valentine’s Day Plunge **AT RIVERSIDE COLORADO**,"Sat, Feb 14, 2026",,False,2026-02-14,The Mishawaka 
+363,15,Graham Good & The Painters + Spring Polar Plunge Couples Package + Lodging,"Sat, Mar 07, 2026",,False,2026-03-07,The Mishawaka 
+364,15,Graham Good & The Painters Inside at The Mish!!!,"Sat, Mar 07, 2026",,False,2026-03-07,The Mishawaka 
+365,15,Spring Polar Plunge **AT RIVERSIDE COLORADO**,"Sun, Mar 08, 2026",,False,2026-03-08,The Mishawaka 
+366,15,SAN HOLO: WHOLESOME RIDDIM CHAPTER TWO,"Sat, Apr 18, 2026",,False,2026-04-18,The Mishawaka 
+367,15,Benjamin Tod and the Inline Six 2026 Tour,"Fri, May 01, 2026",,False,2026-05-01,The Mishawaka 
+368,30,Parabellum,Dec 19,,False,2025-12-19,Goldfield Trading Post
+369,30,Eyes Set to Kill,Dec 20,,False,2025-12-20,Goldfield Trading Post
+370,30,Cemetery Legacy,Dec 27,,False,2025-12-27,Goldfield Trading Post
+371,30,It's A 2000s (New Years) Party,Dec 31,,False,2025-12-31,Goldfield Trading Post
+372,30,Unwritten Law,Jan 2,,False,2026-01-02,Goldfield Trading Post
+373,30,Missing Persons,Jan 3,,False,2026-01-03,Goldfield Trading Post
+374,30,Seaside Massacre,Jan 9,,False,2026-01-09,Goldfield Trading Post
+375,30,Close Enemies,Jan 10,,False,2026-01-10,Goldfield Trading Post
+376,30,Mustard Plug / The Toasters,Jan 13,,False,2026-01-13,Goldfield Trading Post
+377,30,MicroMania Midget Wrestling,Jan 14,,False,2026-01-14,Goldfield Trading Post
+378,30,Emo Night Karaoke,Jan 16,,False,2026-01-16,Goldfield Trading Post
+379,30,Artery Foundation Winterfest,Jan 17,,False,2026-01-17,Goldfield Trading Post
+380,30,Black Flag,Jan 18,,False,2026-01-18,Goldfield Trading Post
+381,30,Local Music Showcase,Jan 23,,False,2026-01-23,Goldfield Trading Post
+382,30,Lucid / Encore,Jan 24,,False,2026-01-24,Goldfield Trading Post
+383,30,Mad Caddies,Jan 25,,False,2026-01-25,Goldfield Trading Post
+384,30,Dexter and The Moonrocks,Jan 30,,False,2026-01-30,Goldfield Trading Post
+385,30,Fleetwood Macramé,Jan 31,,False,2026-01-31,Goldfield Trading Post
+386,30,Say She She,Feb 2,,False,2026-02-02,Goldfield Trading Post
+387,30,Skynyrd Nation - A Tribute To Lynyrd Skynyrd,Feb 6,,False,2026-02-06,Goldfield Trading Post
