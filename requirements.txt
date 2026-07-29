@@ -8,3 +8,4 @@ fuzzywuzzy==0.18.0
 python-Levenshtein==0.23.0
 openai==1.54.0
 httpx==0.27.0
+requests==2.32.3

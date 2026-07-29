@@ -7,6 +7,7 @@ import json
 import html
 import pandas as pd
 import os
+import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth, SpotifyOauthError
 from dotenv import load_dotenv
@@ -53,6 +54,41 @@ load_dotenv()
 client_id = os.getenv('CLIENT_ID')
 client_secret = os.getenv('CLIENT_SECRET')
 
+
+def send_reauth_email(email, display_name):
+    """Notify a user via Brevo that their Spotify connection expired."""
+    api_key = os.getenv('BREVO_API_KEY')
+    if not api_key or not email:
+        print(f"        (no Brevo key or email — couldn't notify {display_name})")
+        return
+    first_name = (display_name or 'there').split()[0]
+    resp = requests.post(
+        'https://api.brevo.com/v3/smtp/email',
+        headers={'api-key': api_key, 'Content-Type': 'application/json'},
+        json={
+            'sender': {'name': 'live&local', 'email': 'noreply@inverttheparadigm.com'},
+            'replyTo': {'name': 'Adam Gent', 'email': '94gent@gmail.com'},
+            'to': [{'email': email}],
+            'subject': 'your live&local playlist needs a quick re-link 🎸',
+            'htmlContent': (
+                f"<p>Hey {first_name}!</p>"
+                "<p>Quick heads up from the live&amp;local bot — Spotify expires app logins "
+                "every 6 months now, and yours just lapsed. That means your playlist can't "
+                "get its weekly update of upcoming shows until you reconnect.</p>"
+                "<p>The fix takes about 10 seconds: head to "
+                '<a href="https://playlist.adamlgent.com">playlist.adamlgent.com</a> '
+                "and hit the Spotify sign-in again. That's it — updates resume Sunday.</p>"
+                "<p>Sorry for the hassle — blame Spotify 😄</p><p>Adam</p>"
+            ),
+        },
+        timeout=15,
+    )
+    if resp.ok:
+        print(f"        notified {display_name} at {email}")
+    else:
+        print(f"        failed to notify {display_name}: {resp.status_code} {resp.text[:200]}")
+
+notified = set()
 for p in playlists:
     spotify_user_id = p['spotify_user_id']
     cur.execute("""
@@ -71,11 +107,13 @@ for p in playlists:
     
     refresh_token = None
     display_name = None
+    user_email = None
     for user in users:
         if user['spotify_user_id'] == spotify_user_id:
             credentials = user['spotify_credentials'] or {}
             refresh_token = credentials.get('refresh_token')
             display_name = user['display_name']
+            user_email = user['email']
 
     if not refresh_token:
         print(f"skipping {display_name or spotify_user_id}: no Spotify credentials, user must sign in again")
@@ -100,6 +138,9 @@ for p in playlists:
             )
             conn.commit()
             print(f"skipping {display_name}: refresh token expired, discarded — user must sign in again")
+            if spotify_user_id not in notified:
+                notified.add(spotify_user_id)
+                send_reauth_email(user_email, display_name)
             continue
         raise
 

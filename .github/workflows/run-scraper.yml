@@ -36,4 +36,5 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
         DATABASE_URL_UNPOOLED: ${{ secrets.DATABASE_URL_UNPOOLED }}
+        BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
       run: python -u update_playlists.py
