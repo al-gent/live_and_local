@@ -35,6 +35,11 @@ export default async function handler(req, res) {
     }
 
     const { spotify_credentials, display_name } = userResult.rows[0];
+
+    if (!spotify_credentials?.access_token) {
+      return res.status(401).json({ error: 'spotify_reauth_required' });
+    }
+
     let accessToken = spotify_credentials.access_token;
 
     // 2. Create Spotify playlist
@@ -181,6 +186,9 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('Create playlist error:', error);
+    if (error.code === 'REAUTH_REQUIRED') {
+      return res.status(401).json({ error: 'spotify_reauth_required' });
+    }
     res.status(500).json({ error: 'Failed to create playlist' });
   }
 }
@@ -201,11 +209,36 @@ async function refreshSpotifyToken(refreshToken, userId) {
   });
 
   if (!tokenResponse.ok) {
+    let errorBody = {};
+    try {
+      errorBody = await tokenResponse.json();
+    } catch (e) {
+      // non-JSON error body
+    }
+
+    // Refresh tokens expire after 6 months (Spotify policy since July 2026).
+    // On invalid_grant: discard the stored token, don't retry — user must sign in again.
+    if (errorBody.error === 'invalid_grant') {
+      // '{}' not NULL — the column has a NOT NULL constraint
+      await pool.query(
+        `UPDATE users SET spotify_credentials = '{}' WHERE spotify_user_id = $1`,
+        [userId]
+      );
+      const reauthError = new Error('Spotify refresh token expired — user must sign in again');
+      reauthError.code = 'REAUTH_REQUIRED';
+      throw reauthError;
+    }
+
     throw new Error('Failed to refresh Spotify token');
   }
 
   const newTokens = await tokenResponse.json();
-  
+
+  // Spotify may omit refresh_token in the refresh response — keep the existing one
+  if (!newTokens.refresh_token) {
+    newTokens.refresh_token = refreshToken;
+  }
+
   // Update user's credentials in database
   await pool.query(
     'UPDATE users SET spotify_credentials = $1 WHERE spotify_user_id = $2',

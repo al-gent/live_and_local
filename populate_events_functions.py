@@ -16,7 +16,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Dict, Optional
 from collections import Counter
 import spotipy
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyOAuth, SpotifyOauthError
 
 # ============================================================================
 # SETUP & DATABASE FUNCTIONS
@@ -30,7 +30,15 @@ def get_spotify_client():
         redirect_uri="http://127.0.0.1:8080",
         scope="playlist-modify-public playlist-modify-private"
     )
-    token_info = auth_manager.refresh_access_token(os.getenv('REFRESH_TOKEN'))
+    try:
+        token_info = auth_manager.refresh_access_token(os.getenv('REFRESH_TOKEN'))
+    except SpotifyOauthError as e:
+        if 'invalid_grant' in str(e):
+            raise RuntimeError(
+                "REFRESH_TOKEN in .env has expired (Spotify refresh tokens expire after 6 months). "
+                "Re-run the Spotify sign-in flow and update REFRESH_TOKEN in .env."
+            ) from e
+        raise
     return spotipy.Spotify(auth=token_info['access_token'])
 
 

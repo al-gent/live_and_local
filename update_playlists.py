@@ -8,7 +8,7 @@ import html
 import pandas as pd
 import os
 import spotipy
-from spotipy.oauth2 import SpotifyOAuth
+from spotipy.oauth2 import SpotifyOAuth, SpotifyOauthError
 from dotenv import load_dotenv
 from fuzzywuzzy import fuzz
 import random
@@ -69,10 +69,17 @@ for p in playlists:
 
     artist_ids = [row[0] for row in cur.fetchall()]
     
+    refresh_token = None
+    display_name = None
     for user in users:
         if user['spotify_user_id'] == spotify_user_id:
-            refresh_token = user['spotify_credentials']['refresh_token']
+            credentials = user['spotify_credentials'] or {}
+            refresh_token = credentials.get('refresh_token')
             display_name = user['display_name']
+
+    if not refresh_token:
+        print(f"skipping {display_name or spotify_user_id}: no Spotify credentials, user must sign in again")
+        continue
 
     auth_manager = SpotifyOAuth(
         client_id=client_id,
@@ -80,7 +87,31 @@ for p in playlists:
         redirect_uri="http://127.0.0.1:8080",
         scope="playlist-modify-public playlist-modify-private"
     )
-    token_info = auth_manager.refresh_access_token(refresh_token)
+    try:
+        token_info = auth_manager.refresh_access_token(refresh_token)
+    except SpotifyOauthError as e:
+        # Refresh tokens expire after 6 months (Spotify policy since July 2026).
+        # On invalid_grant: discard the stored token, don't retry — user must sign in again.
+        if 'invalid_grant' in str(e):
+            # '{}' not NULL — the column has a NOT NULL constraint
+            cur.execute(
+                "UPDATE users SET spotify_credentials = '{}' WHERE spotify_user_id = %s",
+                (spotify_user_id,)
+            )
+            conn.commit()
+            print(f"skipping {display_name}: refresh token expired, discarded — user must sign in again")
+            continue
+        raise
+
+    # Persist a rotated refresh token so it doesn't hit the 6-month expiry
+    if token_info.get('refresh_token') and token_info['refresh_token'] != refresh_token:
+        credentials.update(token_info)
+        cur.execute(
+            "UPDATE users SET spotify_credentials = %s WHERE spotify_user_id = %s",
+            (json.dumps(credentials), spotify_user_id)
+        )
+        conn.commit()
+
     sp = spotipy.Spotify(auth=token_info['access_token'])
 
     track_uris = []

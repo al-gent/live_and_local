@@ -159,6 +159,9 @@ const App = () => {
         setPlaylistDescription('upcoming shows at my favorite venues');
         setSongsPerArtist(3);
         setDaysAhead(21);
+      } else if (result.error === 'spotify_reauth_required') {
+        alert('Your Spotify session has expired. Please sign in again.');
+        handleSpotifyLogin();
       } else {
         alert(`Error: ${result.error}`);
       }
